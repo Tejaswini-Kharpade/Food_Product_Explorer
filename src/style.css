@@ -1,0 +1,359 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  h1, h2, h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+  }
+
+  .container {
+    width: 100%; 
+    max-width: 1500px; 
+    margin: 0 auto; 
+    padding: 0 2rem; 
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(52, 152, 219, 0.5);
+  }
+  
+  button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    background-color: #fff;
+    margin-bottom: 1px;
+    padding: 1rem;
+  }
+  
+  li img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  .error {
+    color: #e74c3c;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .loading {
+    text-align: center;
+    font-style: italic;
+    color: #95a5a6;
+  }
+
+  .food-info-heading {
+    font-weight: bold;               
+    background-color: #c39b1a;      
+    color: #2c3e50;                  
+    padding: 25px 30px;                   
+    border-radius: 10px;            
+    text-align: center;              
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 1rem;             
+  }
+
+  .search-container {
+    display: flex; 
+    gap: 1rem; 
+    margin-bottom: 1.5rem;
+    align-items: center; 
+  }
+  
+  .search-container input[type="text"] {
+    flex: 1; 
+    min-width: 0; 
+    padding: 0.5rem; 
+    border: 1px solid #ddd; 
+    border-radius: 4px; 
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1); 
+    font-size: 1rem; 
+  }
+  
+  .search-container input[type="text"]:focus {
+    border-color: #3498db; 
+    outline: none; 
+    box-shadow: 0px 0px 5px rgba(52, 152, 219, 0.5); 
+  }
+  
+  select {
+    height: 41px;
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    padding: 0 10px; 
+    font-size: 14px; 
+    background-color: #fff; 
+    outline: none; 
+    transition: border-color 0.3s ease; 
+  }
+  
+  select:focus {
+    border-color: #007bff; 
+  }
+  
+  .sort-dropdown {
+    padding: 0.5rem;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    outline: none;
+    transition: border-color 0.3s ease;
+    width: 90px;
+  }
+
+  .category-dropdown{
+    width: 200px;
+
+  }
+  
+
+  .product-list {
+    display: grid; 
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 1rem; 
+    margin-top: 2rem; 
+  }
+  
+  .product-item {
+    display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 0.5rem;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  text-align: center; 
+   
+  }
+  
+  .product-item img {
+    max-width: 20%; 
+    height: auto; 
+    margin: 0 auto;
+    object-fit: cover; 
+    object-position: center;
+
+  }
+  
+  .product-item h3 {
+    font-size: 1rem; 
+    color: #333; 
+    margin-top: 0.5rem; 
+  }
+  
+  .product-item p {
+    font-size: 0.9rem; 
+    color: #666; 
+    margin-top: 0.5rem; 
+  }
+
+  .info-box {
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    padding: 0.5rem; 
+    margin-top: 0.5rem; 
+    background-color: #fefefe; 
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .info-box h4 {
+    margin: 0 0 0.5rem; 
+    font-size: 1rem; 
+    color: #2c3e50; 
+    align-items: start;
+  }
+  
+  .info-box p {
+    margin: 0; 
+    color: #666; 
+    font-size: 0.9rem; 
+    align-items: start;
+  }
+
+
+  .product-detail {
+    text-align: center;
+  }
+  
+  
+  .product-detail-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin: 40px auto;
+    max-width: 1200px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    border-radius: 10px;
+    background-color: #fff;
+    min-height: 600px;
+    height: auto;  
+
+
+  }
+ 
+  .product-detail-image-small {
+    width: 300px; 
+    height: auto; 
+    border-radius: 8px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+    flex-shrink: 0; 
+  }
+  
+  .product-detail-info ul {
+    margin: 0; 
+    padding: 0; 
+    line-height: 0.1; 
+    font-size: 17px; 
+    list-style-type: none; 
+
+  }
+
+
+  .left-section {
+    flex: 3; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    border: 2px solid #ddd; 
+    border-radius: 8px; 
+    background-color: #fefefe; 
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+    min-height: 400px; 
+
+}
+
+.middle-section {
+    flex: 4; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px; 
+}
+
+.right-section {
+    flex: 3; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; 
+    padding: 0 10px; 
+}
+
+  
+  .Nutrition-info{
+    margin-bottom: 10px;
+  }
+  
+  .nutrition-table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 300px; 
+
+  }
+  
+  .nutrition-table th, .nutrition-table td {
+    border: 1px solid rgb(181, 177, 177);
+    padding: 8px;
+    text-align: left;
+  }
+
+  .nutrition-table th:first-child,
+  .nutrition-table td:first-child {
+  width: 200px;
+  }
+
+  .nutrition-table th:nth-child(2),
+  .nutrition-table td:nth-child(2) {
+    width: 110px;
+  }
+    
+  .load-more {
+    display: flex;
+    justify-content: center;
+  }
+  .load-more {
+    margin: 10px auto; 
+  }
+
+  .ingredients-labels {
+    padding: 0;
+    font-size: 1.1em; 
+    margin: 0 0 10px 0; 
+
+  }
+  
+  .ingredients-labels ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    padding: 0.2rem; 
+
+  }
+  
+  .ingredients-labels li {
+    margin: 0;
+    padding: 0.2rem; 
+  }
+  
+  .arrow-icon {
+    margin-right: 0.5rem; 
+    font-size: 0.9rem; 
+  }
+
+  .back-button {
+    background-color: #8f9ba9;
+    color: white;
+    border: none;
+    padding: 5px 8px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8rem;
+  }
+  
+  .back-button:hover {
+    background-color: #a7b0ba;
+  }
