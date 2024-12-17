@@ -1,70 +1,104 @@
-# Getting Started with Create React App
+<h1 align="center"> Food Product Explorer</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
+  
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Visual Studio](https://img.shields.io/badge/Visual_Studio-5C2D91?style=for-the-badge&logo=visual%20studio&logoColor=white)
+[![JavaScript](https://img.shields.io/badge/javascript-ECMAScript_2022-brightgreen.svg?style=for-the-badge&logo=javascript&logoColor=F7DF1E)](https://www.javascript.com/)
+[![React](https://img.shields.io/badge/react-16.13.1-blue.svg?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org)
+[![Axios](https://img.shields.io/badge/Axios-0.29.2-blue.svg?style=for-the-badge&logo=axios&logoColor=white)](https://axios-http.com/)
 
-## Available Scripts
 
-In the project directory, you can run:
+</div>
 
-### `npm start`
+Food Product Explorer is a web application that provides a user-friendly interface to search, filter, and view details of food products using the OpenFoodFacts API.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<h3>Features</h3>
+ 
+- **Search**: Find food products by name, category, or barcode.
+- **Product Details**: View detailed information, including ingredients, nutritional facts, and images.
+- **Filters and Sorting**: Filter search results by category and sort by product name or nutritional grade.
+- **Pagination**: Load more products seamlessly.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Getting Started
+Follow these steps to set up and run the project on your local machine.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
+Ensure you have the following installed:
+- Window 10
+- [python 3](https://www.python.org/)
+- [Visual Studio](https://visualstudio.microsoft.com/downloads/)
+- [Node.js](https://nodejs.org/)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Dependencies
+The project uses the following libraries and frameworks:
+- [React](https://reactjs.org/)
+- [Axios](https://axios-http.com/)
+- [React Router DOM](https://reactrouter.com/)
+  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Installation
 
-### `npm run eject`
+1. Clone the Repository:
+<div>
+<pre style="font-size: 1.2em;">
+git clone https://github.com/<your-username>/<your-repository-name>.git
+  
+</pre>
+</div>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. Install Dependencies:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<div>
+<pre style="font-size: 1.2em;">
+cd your-repository-name
+npm install
+</pre>
+</div>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Running the Application:
+<div>
+<pre style="font-size: 1.2em;">
+  
+npm start
+</pre>
+</div>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+This will start a development server and open your default browser to http://localhost:3000.
 
-## Learn More
+## Project Structure
+- FoodApiServices.js: Handles API calls to OpenFoodFacts.
+- FoodSearch.js: Component for searching and listing products.
+- ProductDetail.js: Component for viewing detailed product information.
+- style.css: Stylesheet for the application.
+  
+## API Endpoints
+This application uses the OpenFoodFacts API to fetch product data:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Product Search: /cgi/search.pl
+- Category Search: /category/<category>.json
+- Product Details: /api/v0/product/<barcode>.json
+- Category List: /categories.json
+  
+## Usage
+### Search Products:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- By name: Type a product name in the search bar.
+- By barcode: Enter the product's barcode.
+- By category: Select a category from the dropdown.
+  
+### Filter and Sort:
 
-### Code Splitting
+- Sort products alphabetically or by nutritional grade using dropdowns.
+- Use the "Load More" button to view additional products.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### View Details:
 
-### Analyzing the Bundle Size
+- Click on a product to view detailed information.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Acknowledgments
+* OpenFoodFacts for their API and data.
+* React and Axios for powering the frontend.
